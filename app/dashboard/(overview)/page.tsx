@@ -6,6 +6,11 @@ import { lusitana } from '@/app/ui/fonts';
 // import { Invoice, Revenue } from '../../lib/definitions';
 import { Suspense } from 'react';
 import { RevenueChartSkeleton, LatestInvoicesSkeleton, CardsSkeleton } from '@/app/ui/skeletons';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Dashboard',
+};
 
 // The page is an async server component
 export default async function Page() {
